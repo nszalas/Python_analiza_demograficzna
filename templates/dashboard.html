@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><title>Dashboard</title></head>
+<body>
+  <h1>Witaj, {{ name }}!</h1>
+  <p><a href="{{ url_for('logout') }}">Wyloguj</a></p>
+
+  <h2>Analiza demograficzna</h2>
+  <img src="{{ url_for('static', filename='wykresy/urodzenia_zgony.png') }}" alt="Urodzenia i zgony">
+  <img src="{{ url_for('static', filename='wykresy/przyrost.png') }}" alt="Przyrost naturalny">
+</body>
+</html>
