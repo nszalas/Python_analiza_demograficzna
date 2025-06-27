@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><title>Rejestracja</title></head>
+<body>
+  <h2>Rejestracja</h2>
+  <form method="post">
+    <label>Login:</label><input type="text" name="username" required><br>
+    <label>Hasło:</label><input type="password" name="password" required><br>
+    <label>Powtórz hasło:</label><input type="password" name="password2" required><br>
+    <button type="submit">Zarejestruj się</button>
+  </form>
+  {% if error %}
+  <p style="color:red">{{ error }}</p>
+  {% endif %}
+  <p><a href="{{ url_for('login') }}">Masz już konto? Zaloguj się</a></p>
+</body>
+</html>

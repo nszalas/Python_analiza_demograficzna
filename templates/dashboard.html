@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><title>Dashboard</title></head>
+<body>
+  <h1>Witaj, {{ name }}!</h1>
+  <p><a href="{{ url_for('logout') }}">Wyloguj</a></p>
+
+  <h2>Analiza demograficzna</h2>
+  <img src="{{ url_for('static', filename='wykresy/urodzenia_zgony.png') }}" alt="Urodzenia i zgony">
+  <img src="{{ url_for('static', filename='wykresy/przyrost.png') }}" alt="Przyrost naturalny">
+  <img src="{{ url_for('static', filename='wykresy/urodzenia_wg_wieku.png') }}" alt="Urodzenia na 1000 kobiet w grupach wiekowych">
+  <img src="{{ url_for('static', filename='wykresy/sredni_wiek_kobiet.png') }}" alt="Przeciętny wiek kobiet rodzących dziecko">
+  <img src="{{ url_for('static', filename='wykresy/malzenstwa_urodzenia.png') }}" alt="Małżeństwa i Urodzenia żywe w poszczególnych latach w tys.">
+</body>
+</html>
